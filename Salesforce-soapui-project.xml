@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="b333d224-59f0-49f0-8cee-7cd371ff0cca" activeEnvironment="Default" name="Salesforce" resourceRoot="" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="Export JUnit Results" value="false"/>
+  <con:entry key="Export All" value="false"/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="TestSuite" value="PurchaseFlow"/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="Select Report Type" value=""/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="Print Report" value="true"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Export JUnit Results with test properties" value="false"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="TestCase" value="HappyTest"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="TestRunner Path" value=""/>
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="Root Folder" value=""/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Save Project" value="false"/>
+</xml-fragment>]]></con:setting></con:settings><con:interface xsi:type="con:RestService" id="4289efca-5bc9-463c-a26f-ef34e7b2a08d" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://test.salesforce.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>https://test.salesforce.com</con:endpoint></con:endpoints><con:resource name="Token" path="/services/oauth2/token" id="87b73111-8453-46d0-bfea-4c3eccd282f9"><con:settings/><con:parameters><con:parameter><con:name>client_id</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>grant_type</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>username</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>password</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>client_secret</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="Getting Session Token" id="b3a5da5f-ad8a-4b72-af45-7a0589fee9b8" method="POST"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>400</con:status><con:params/><con:element xmlns:tok="https://test.salesforce.com/services/oauth2/token">tok:Fault</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>x-www-form-urlencoded</con:mediaType><con:params/></con:representation><con:representation type="REQUEST"><con:mediaType>application/x-www-form-urlencoded</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:tok="https://test.salesforce.com/services/oauth2/token">tok:Response</con:element></con:representation><con:request name="Request 1" id="7aa1c0ef-ddd1-47c9-b03e-16fa01737bc0" mediaType="application/x-www-form-urlencoded" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://test.salesforce.com</con:endpoint><con:request/><con:originalUri>https://test.salesforce.com/services/oauth2/token</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="password" value="0pen2018!nZrpwhcS7KXAqGmDlHL9LOua"/>
+  <con:entry key="grant_type" value="password"/>
+  <con:entry key="client_secret" value="6436005077767819833"/>
+  <con:entry key="client_id" value="3MVG9ifmAKCHISbaTzCrnAlwIXUpQHDQ.hEPYEHtz7x4NZXVPzV_4582D1Zj7mhxHkkYW6Z8bjKRZuB5Qphi2"/>
+  <con:entry key="username" value="ops.sf2@openenglish.com.stg"/>
+</con:parameters><con:parameterOrder><con:entry>client_id</con:entry><con:entry>grant_type</con:entry><con:entry>username</con:entry><con:entry>password</con:entry><con:entry>client_secret</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="a00dca6e-9fbb-411a-8079-aedb1b3fa67c" wadlVersion="http://wadl.dev.java.net/2009/02" name="" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints/><con:resource name="TestEnvironment" path="/services/apexrest/leads" id="d41f89d7-1f51-415d-9faa-8e12ead5b6aa"><con:settings/><con:parameters><con:parameter><con:name>Authorization</con:name><con:value/><con:style>HEADER</con:style><con:default/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="LeadSubmit" id="af5b8d00-c317-4bc7-878c-8b710582819d" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>text/html; charset=UTF-8</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>401</con:status><con:params/><con:element>Fault</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:lead="https://openeducation--STG.cs77.my.salesforce.com/apexrest/leads">lead:Response</con:element></con:representation><con:request name="Request 1" id="3094473b-f4c9-49c2-bd71-fbf10956ed9a" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>${#Project#testEnv}</con:endpoint><con:request>{
+    "firstName":"John",
+    "lastName":"Doe",
+    "company":"John Doe",
+    "emailAddress":"john.doe@openenglish.com",
+    "countryOfResidence":"ar",
+    "city":"Buenos Aires",
+    "state":"",
+    "phoneType":"Home",
+    "age":"25-34 years",
+    "media":"Internet",
+    "subMed":"Facebook",
+    "source":"OE.com",
+    "gclid":"aGclid",
+    "utmSource":"anUtmSource",
+    "utmMedium":"anUtmMedium",
+    "utmCampaign":"anUtmCampaign",
+    "utmContent":"anUtmContent",
+    "utmTerm":"anUtmTerm",
+    "adGroup":"anAdGroup",
+    "landingPagesCurrentIndex":"aLandingPageCurrentIndex",
+    "acceptNightCalls":false,
+    "acceptWeekendCalls":false,
+    "kenshooTrackingId":"1234567890",
+    "uaUserId":"anUAUserId",
+    "organization":"Open English",
+    "phone":"54342155363601",
+    "strippedPhone":"5363601",
+    "five9Phone":"011549342155363601",
+    "userData":"{\"programOfInterest\":\"Digital Marketing\"}"
+}</con:request><con:originalUri>https://openeducation--STG.cs77.my.salesforce.com/apexrest/leads</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="Authorization" value="Bearer ${#Project#access_token}" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>Authorization</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:testSuite id="cb778a9c-3710-454c-a32b-20ea728f3cc6" name="PurchaseFlow"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="632ad076-a7cb-4921-96b4-d063c449b1c3" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="HappyTest" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="Obtención de Token de Sesión" id="975ba141-9c7a-42b1-a12b-0cbc9d2ee5e4"><con:settings/><con:config service="https://test.salesforce.com" resourcePath="/services/oauth2/token" methodName="Getting Session Token" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Obtención de Token de Sesión" id="7aa1c0ef-ddd1-47c9-b03e-16fa01737bc0" mediaType="application/x-www-form-urlencoded" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://test.salesforce.com</con:endpoint><con:request/><con:originalUri>https://test.salesforce.com/services/oauth2/token</con:originalUri><con:assertion type="Simple Contains" id="7e68e61e-f5c7-4cd6-a580-164e7609e5d0" name="Contains"><con:configuration><token>Bearer</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="password" value="0pen2018!nZrpwhcS7KXAqGmDlHL9LOua"/>
+  <con:entry key="grant_type" value="password"/>
+  <con:entry key="client_secret" value="6436005077767819833"/>
+  <con:entry key="client_id" value="3MVG9ifmAKCHISbaTzCrnAlwIXUpQHDQ.hEPYEHtz7x4NZXVPzV_4582D1Zj7mhxHkkYW6Z8bjKRZuB5Qphi2"/>
+  <con:entry key="username" value="ops.sf2@openenglish.com.stg"/>
+</con:parameters><con:parameterOrder><con:entry>client_id</con:entry><con:entry>grant_type</con:entry><con:entry>username</con:entry><con:entry>password</con:entry><con:entry>client_secret</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="transfer" name="Property Transfer" id="aa3cccec-e78e-4862-ac9f-add1f8407254"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>SessionID</con:name><con:sourceType>ResponseAsXml</con:sourceType><con:sourceStep>Obtención de Token de Sesión</con:sourceStep><con:sourcePath>//*:access_token</con:sourcePath><con:targetType>access_token</con:targetType><con:targetStep>#Project#</con:targetStep><con:targetPath/><con:type>XPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>url_instance</con:name><con:sourceType>ResponseAsXml</con:sourceType><con:sourceStep>Obtención de Token de Sesión</con:sourceStep><con:sourcePath>//*:instance_url</con:sourcePath><con:targetType>Endpoint</con:targetType><con:targetStep>LeadSubmit</con:targetStep><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="restrequest" name="LeadSubmit" id="35b2803f-c111-47f2-ab1e-9dc5852cb796"><con:settings/><con:config service="" resourcePath="/services/apexrest/leads" methodName="LeadSubmit" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="LeadSubmit" id="3094473b-f4c9-49c2-bd71-fbf10956ed9a" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://openeducation--STG.cs77.my.salesforce.com</con:endpoint><con:request>{
+    "firstName":"John",
+    "lastName":"Doe",
+    "company":"John Doe",
+    "emailAddress":"john.doe@openenglish.com",
+    "countryOfResidence":"ar",
+    "city":"Buenos Aires",
+    "state":"",
+    "phoneType":"Home",
+    "age":"25-34 years",
+    "media":"Internet",
+    "subMed":"Facebook",
+    "source":"OE.com",
+    "gclid":"aGclid",
+    "utmSource":"anUtmSource",
+    "utmMedium":"anUtmMedium",
+    "utmCampaign":"anUtmCampaign",
+    "utmContent":"anUtmContent",
+    "utmTerm":"anUtmTerm",
+    "adGroup":"anAdGroup",
+    "landingPagesCurrentIndex":"aLandingPageCurrentIndex",
+    "acceptNightCalls":false,
+    "acceptWeekendCalls":false,
+    "kenshooTrackingId":"1234567890",
+    "uaUserId":"anUAUserId",
+    "organization":"Open English",
+    "phone":"54342155363601",
+    "strippedPhone":"5363601",
+    "five9Phone":"011549342155363601",
+    "userData":"{\"programOfInterest\":\"Digital Marketing\"}"
+}</con:request><con:originalUri>https://openeducation--STG.cs77.my.salesforce.com/apexrest/leads</con:originalUri><con:assertion type="Simple Contains" id="1a83c28c-9b3b-4da2-9f3e-117c8929af1e" name="Contains"><con:configuration><token>leadId</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="Authorization" value="Bearer ${#Project#access_token}" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>Authorization</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="goto" name="Resultado?" id="808841b1-0721-4c00-9cef-14b83127fd8d"><con:settings/><con:config xsi:type="con:GotoStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:condition><con:name>Pass</con:name><con:type>XPATH</con:type></con:condition></con:config></con:testStep><con:properties><con:property><con:name>Authorization</con:name><con:value>00D0t0000000Nog!ARAAQGaxr_Tj_ELS5iXZuYAydPunrY_.wdI_SMJ0OwbtomE.MFTRH0zRiEYRa534AdfEtiWNH0JSYOjPnAP4Dm3Gc3pcQLc4</con:value></con:property></con:properties></con:testCase><con:properties/></con:testSuite><con:properties><con:property><con:name>testEnv</con:name><con:value>https://openeducation--STG.cs77.my.salesforce.com</con:value></con:property><con:property><con:name>access_token</con:name><con:value>00D0t0000000Nog!ARAAQHfj2xE7AzS8wZ5m86yOtPa3SGwMnQZy6BL1qbU4A9kOkxJ7Ggs1KBL5fRbBsqH8V5GHu_WGjeo17kNqiU8GGJoRUKxO</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
